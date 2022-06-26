@@ -436,16 +436,24 @@ button {
 } */
 
 .fade {
-    transition: all 3s ease;
-    animation: fade 1s ease-in-out;
+    transition: all 3s linear;
+    animation: fade 3s linear infinite;
 }
 
-@-webkit-keyframes fade {
-    from {
-        opacity: .6
+@keyframes fade {
+    0% {
+        opacity: 0.4
     }
 
-    to {
+    30% {
+        opacity: 0.6
+    }
+
+    60% {
+        opacity: 0.8
+    }
+
+    100% {
         opacity: 1
     }
 }
