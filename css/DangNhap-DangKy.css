@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --success-color: #91ad41;
+    --error-color: #e74c3c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form {
+    max-width: 40%;
+    margin: 100px auto;
+}
+
+.container h1 {
+    text-align: center;
+    background: linear-gradient(35deg, #91ad41 0%, #ff8a6c 100%);
+    background: -moz-linear-gradient(35deg, #91ad41 0%, #ff8a6c 100%);
+    background: -webkit-linear-gradient(35deg, #91ad41 0%, #ff8a6c 100%);
+    background: -ms-linear-gradient(35deg, #91ad41 0%, #ff8a6c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -ms-background-clip: text;
+    -ms-text-fill-color: transparent;
+    font-size: 34px;
+}
+
+.form-control {
+    width: 100%;
+    position: relative;
+    margin-top: 40px;
+}
+
+.form-control input {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #adadad;
+}
+
+.form-control span {
+    position: absolute;
+    border-bottom: 3px solid var(--success-color);
+    top: 38px;
+    left: 0;
+    right: 0;
+    width: 0%;
+    transition: 0.6s;
+}
+
+.form-control input:focus~span {
+    width: 100%;
+}
+
+.form-control.error small {
+    color: var(--error-color);
+}
+
+.form-control.error input {
+    border-bottom: 2px solid var(--error-color);
+}
+
+.btn-submit {
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    background: var(--success-color);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 25px 0;
+    position: relative;
+    transition: all 500ms;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn-submit::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background: linear-gradient(35deg, #91ad41 0%, #ff8a6c 100%);
+    z-index: -1;
+    transition: all 500ms
+}
+
+.btn-submit:hover {
+    background: linear-gradient(35deg, #91ad41 0%, #ff8a6c 100%);
+}
+
+.btn-submit:hover::before {
+    width: 100%;
+}
+
+.signup-link {
+    text-align: center;
+}
+
+.signup-link a {
+    color: var(--success-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}
+
+.email,
+.confirm-password {
+    display: none;
+}
+
+.more-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.more-info a {
+    color: #05a;
+    text-decoration: none;
+}
+
+.more-info a:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.rememberpass {
+    color: #05a;
+}
+
+
+.or {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.875rem;
+}
+
+.first,
+.second {
+    height: 1px;
+    width: 100%;
+    background-color: #dbdbdb;
+    flex: 1;
+}
+
+.hoac {
+    color: #ccc;
+    padding: 1px 1rem;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.order-login {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.type-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 2px 16px;
+    border-radius: 8px;
+    margin: 0 8px;
+}
+
+.type-login:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.type-login:first-child {
+    flex: 1;
+}
+
+.type-login:last-child {
+    flex: 1;
+}
+
+.type-login span {
+    margin-left: 4px;
+}

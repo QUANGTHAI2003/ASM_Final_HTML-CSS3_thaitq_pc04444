@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASM2 HTM5&CSS3 - thaitqpc04444</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header section -->
+        <header class="header">
+            <section class="bar">
+                <i class="fa-solid fa-bars menu"></i>
+            </section>
+            <section class="logo main">
+                <img src="./images/logo.webp" alt="logo">
+            </section>
+            <section class="overlay"></section>
+            <nav class="nav">
+                <img src="./images/logo.webp" style="display: none;" alt="">
+                <section class="header-top">
+                    <section class="logo">
+                        <img src="./images/logo.webp" alt="logo">
+                    </section>
+                    <!-- <i class="fa-solid fa-xmark close"></i> -->
+                </section>
+                <ul class="ul-main">
+                    <li><a href="./index.html">Trang Chủ</a></li>
+                    <li><a href="./GioiThieu.html">Giới Thiệu</a></li>
+                    <li>
+                        <section class="main-subnav">
+                            <a href="./SanPham.html">Sản phẩm</a>
+                            <i class="fa-solid fa-angle-down down"></i>
+                            <ul class="subnav">
+                                <li>
+                                    <a href="./SanPham.html">
+                                        <i class="fa-solid fa-caret-right"></i>
+                                        Tất cả
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./RauCu.html">
+                                        <i class="fa-solid fa-caret-right"></i>
+                                        Rau củ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./HoaQua.html">
+                                        <i class="fa-solid fa-caret-right"></i>
+                                        Hoa quả
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./HaiSan.html">
+                                        <i class="fa-solid fa-caret-right"></i>
+                                        Hải sản
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./CacLoaiHat.html">
+                                        <i class="fa-solid fa-caret-right"></i>
+                                        Các lọai hạt
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./ThucPhamTuoiSong.html">
+                                        <i class="fa-solid fa-caret-right"></i>
+                                        Thực phẩm tươi sống
+                                    </a>
+                                </li>
+                            </ul>
+                        </section>
+                    </li>
+                    <li><a href="./TinTuc.html" class="active">Tin Tức</a></li>
+                    <li><a href="./LienHe.html">Liên hệ</a></li>
+                </ul>
+            </nav>
+            <section class="more">
+                <section class="search-box">
+                    <input type="text" class="search-box__input" placeholder="Tìm kiếm" />
+                    <button class="search-box__btn button-search">
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    </button>
+                </section>
+                <section class="user group-account">
+                    <i class="fa-solid fa-user-plus"></i>
+                    <section class="group">
+                        <a href="./DangNhap.html" class="btn btn__signin">Đăng nhập</a>
+                        <a href="./DangKy.html" class="btn btn__signup">Đăng ký</a>
+                    </section>
+                </section>
+                <section class="cart">
+                    <a href="./cart.html">
+                        <i class="fa-solid fa-cart-shopping cart-icon"></i>
+                        <span>2</span>
+                    </a>
+                </section>
+            </section>
+        </header>
+        <section class="background">
+            <div class="content-bg">
+                <h3 class="title-bg">
+                    Tin tức
+                </h3>
+                <p>
+                    <span class="bg-title">Trang chủ</span>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span class="page">Tin tức</span>
+                </p>
+            </div>
+        </section>
+        <section class="lastest-news">
+            <h2 class="text-gradient">TIN TỨC</h2>
+            <div class="lastest-news-container">
+                <article class="col-item top">
+                    <div class="image">
+                        <img class="card-img" src="./images/news1.webp" alt="">
+                    </div>
+                    <div class="time">
+                        <i class="fa-regular fa-calendar"></i>
+                        <span>24/05/2022</span>
+                    </div>
+                    <div class="content-news">
+                        <h3>Rau xanh tăng giá mạnh vì trời mưa, người dân nội thành lao đao</h3>
+                        <p>Khoảng gần một tuần nay, do ảnh hưởng của những cơn mưa lớn kéo dài liên tiếp nên...</p>
+                    </div>
+                </article>
+                <article class="col-item top">
+                    <div class="image">
+                        <img class="card-img" src="./images/news2.webp" alt="">
+                    </div>
+                    <div class="time">
+                        <i class="fa-regular fa-calendar"></i>
+                        <span>24/05/2022</span>
+                    </div>
+                    <div class="content-news">
+                        <h3>Nhập khẩu rau quả vượt mốc 1 tỷ USD, Thái Lan chiếm 60% thị phần</h3>
+                        <p>Theo báo cáo từ Bộ NN&PTNT, giá trị xuất khẩu hàng rau quả tháng 9 năm 2017 ước đ...</p>
+                    </div>
+                </article>
+                <article class="col-item top">
+                    <div class="image">
+                        <img class="card-img" src="./images/news3.webp" alt="">
+                    </div>
+                    <div class="time">
+                        <i class="fa-regular fa-calendar"></i>
+                        <span>24/05/2022</span>
+                    </div>
+                    <div class="content-news">
+                        <h3>Bí quyết bảo quản nho đen trong tủ lạnh tươi lâu hơn</h3>
+                        <p>Bí quyết lựa chọn và bảo quản nho tươi – Nho rất ngon và tốt cho sức khỏe, tuy nh...</p>
+                    </div>
+                </article>
+                <article class="col-item bottom">
+                    <div class="image">
+                        <img class="card-img" src="./images/news4.webp" alt="">
+                    </div>
+                    <div class="time">
+                        <i class="fa-regular fa-calendar"></i>
+                        <span>24/05/2022</span>
+                    </div>
+                    <div class="content-news">
+                        <h3>Những loại trái cây Nhật đắt như vàng ròng đổ bộ về Việt Nam</h3>
+                        <p>Nhật Bản là đất nước có nhiều loại hoa quả có chất lượng thuộc hàng ngon nhất thế...</p>
+                    </div>
+                </article>
+                <article class="col-item bottom">
+                    <div class="image">
+                        <img class="card-img" src="./images/news5.webp" alt="">
+                    </div>
+                    <div class="time">
+                        <i class="fa-regular fa-calendar"></i>
+                        <span>24/05/2022</span>
+                    </div>
+                    <div class="content-news">
+                        <h3>Công dụng của chanh ngâm mật ong chữa ho hiệu quả</h3>
+                        <p>Chắc bạn đã biết, cả chanh và mật ong đều là những nguyên liệu quý bởi những công...</p>
+                    </div>
+                </article>
+                <article class="col-item bottom">
+                    <div class="image">
+                        <img class="card-img" src="./images/news6.webp" alt="">
+                    </div>
+                    <div class="time">
+                        <i class="fa-regular fa-calendar"></i>
+                        <span>24/05/2022</span>
+                    </div>
+                    <div class="content-news">
+                        <h3>4 lý do bạn nên ăn dâu tây phòng tránh ung thư hiệu quả</h3>
+                        <p>Phòng tránh ung thư, điều chỉnh huyết áp, tăng cường hệ miễn dịch... là những tác...</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="sign">
+            <div class="sign-content">
+                <h3>Đăng ký nhận tin khuyến mãi</h3>
+                <form action="#">
+                    <input type="email" placeholder="Nhập email của bạn ..."
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                    <button type="submit">Đăng ký</button>
+                </form>
+            </div>
+        </section>
+        <!-- Footer section -->
+        <footer class="footer">
+            <section class="footer-links">
+                <section class="col-ft-1 ft">
+                    <ul class="footer-list">
+                        <li>
+                            <img src="./images/logo.webp" alt="">
+                        </li>
+                        <li>
+                            <a href="./LienHe.html">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>288 Đường Nguyễn Văn Linh, Hưng Lợi, Ninh Kiều, Cần Thơ</span>
+                            </a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            <a class="thai" href="tel:0774060610">0774060610</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:thaitqpc04444@fpt.edu.vn">thaitqpc04444@fpt.edu.vn</a>
+                        </li>
+                    </ul>
+                    <section class="col-ft-1 ft-address">
+                    </section>
+                </section>
+                <section class="col-ft-2 ft">
+                    <h4>Thông tin</h4>
+                    <ul class="footer-list">
+                        <li>
+                            <a href="./index.html">
+                                <i class="fa-solid fa-caret-right"></i>
+                                Trang chủ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./GioiThieu.html">
+                                <i class="fa-solid fa-caret-right"></i>
+                                Giới thiệu
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./SanPham.html">
+                                <i class="fa-solid fa-caret-right"></i>
+                                Sản phẩm
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./TinTuc.html">
+                                <i class="fa-solid fa-caret-right"></i>
+                                Tin tức
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./LienHe.html">
+                                <i class="fa-solid fa-caret-right"></i>
+                                Liên hệ
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <section class="col-ft-3 ft">
+                    <h4>CHÍNH SÁCH</h4>
+                    <ul class="footer-list">
+                        <li>
+                            <a href="./index.html">
+                                <i class="fa-solid fa-caret-right"></i>
+                                Chính sách thanh toán
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./GioiThieu.html">
+                                <i class="fa-solid fa-caret-right"></i>
+                                Chính sách vận chuyển
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./SanPham.html">
+                                <i class="fa-solid fa-caret-right"></i>
+                                Chính sách bảo hành
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./TinTuc.html">
+                                <i class="fa-solid fa-caret-right"></i>
+                                Chính sách đổi trả
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./LienHe.html">
+                                <i class="fa-solid fa-caret-right"></i>
+                                Chính sách bảo mật
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <section class="col-ft-4 ft">
+                    <h4>SẢN PHẨM</h4>
+                    <ul class="footer-list">
+                        <li>
+                            <a href="./index.html">
+                                <i class="fa-solid fa-caret-right"></i>
+                                Rau củ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./GioiThieu.html">
+                                <i class="fa-solid fa-caret-right"></i>
+                                Hoa quả
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./SanPham.html">
+                                <i class="fa-solid fa-caret-right"></i>
+                                Hải sản
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./TinTuc.html">
+                                <i class="fa-solid fa-caret-right"></i>
+                                Các loại hạt
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./LienHe.html">
+                                <i class="fa-solid fa-caret-right"></i>
+                                Thực phẩm tươi sống
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+            <section class="footer-copyright">
+                <section class="copyright">
+                    <p>Copyright &copy;2022 All rights reserved.
+                        Email: <a href="mailto:thaitqpc04444@fpt.edu.vn">&nbsp;thaitqpc04444@fpt.edu.vn</a>
+                    </p>
+                </section>
+            </section>
+        </footer>
+    </div>
+    <script src="./js/app.js"></script>
+    <script src="./js/cart.js"></script>
+</body>
+
+</html>

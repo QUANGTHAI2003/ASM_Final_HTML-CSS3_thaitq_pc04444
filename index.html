@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASM2 HTM5&CSS3 -thaitqpc04444</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <script src="./js/mixitup.min.js"></script> -->
+    <!-- <script src="./js/jquery-3.6.0.min.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <section class="container">
+        <!-- Header section -->
+        <header class="header">
+            <section class="bar">
+                <i class="fa-solid fa-bars menu"></i>
+            </section>
+            <section class="logo main">
+                <img src="./images/logo.webp" alt="logo">
+            </section>
+            <section class="overlay"></section>
+            <nav class="nav">
+                <img src="./images/logo.webp" style="display: none;" alt="">
+                <section class="header-top">
+                    <section class="logo">
+                        <img src="./images/logo.webp" alt="logo">
+                    </section>
+                    <!-- <i class="fa-solid fa-xmark close"></i> -->
+                </section>
+                <ul class="ul-main">
+                    <li><a href="./index.html" class="active">Trang Chủ</a></li>
+                    <li><a href="./GioiThieu.html">Giới Thiệu</a></li>
+                    <li>
+                        <section class="main-subnav">
+                            <a href="./SanPham.html">Sản phẩm</a>
+                            <i class="fa-solid fa-angle-down down"></i>
+                            <ul class="subnav">
+                                <li>
+                                    <a href="./SanPham.html">
+                                        <i class="fa-solid fa-caret-right"></i>
+                                        Tất cả
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./RauCu.html">
+                                        <i class="fa-solid fa-caret-right"></i>
+                                        Rau củ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./HoaQua.html">
+                                        <i class="fa-solid fa-caret-right"></i>
+                                        Hoa quả
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./HaiSan.html">
+                                        <i class="fa-solid fa-caret-right"></i>
+                                        Hải sản
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./CacLoaiHat.html">
+                                        <i class="fa-solid fa-caret-right"></i>
+                                        Các lọai hạt
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./ThucPhamTuoiSong.html">
+                                        <i class="fa-solid fa-caret-right"></i>
+                                        Thực phẩm tươi sống
+                                    </a>
+                                </li>
+                            </ul>
+                        </section>
+                    </li>
+                    <li><a href="./TinTuc.html">Tin Tức</a></li>
+                    <li><a href="./LienHe.html">Liên hệ</a></li>
+                </ul>
+            </nav>
+            <section class="more">
+                <section class="search-box">
+                    <input type="text" class="search-box__input" placeholder="Tìm kiếm" />
+                    <button class="search-box__btn button-search">
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    </button>
+                </section>
+                <section class="user group-account">
+                    <i class="fa-solid fa-user-plus"></i>
+                    <section class="group">
+                        <a href="./DangNhap.html" class="btn btn__signin">Đăng nhập</a>
+                        <a href="./DangKy.html" class="btn btn__signup">Đăng ký</a>
+                    </section>
+                </section>
+                <section class="cart">
+                    <a href="./cart.html">
+                        <i class="fa-solid fa-cart-shopping cart-icon"></i>
+                        <span>2</span>
+                    </a>
+                </section>
+            </section>
+        </header>
+        <!-- Banner section -->
+        <section class="banner">
+            <section class="sliders">
+                <section class="slide-content">
+                    <section class="slider-main">
+                        <section class="slider-content fade">
+                            <img src=".//images/slider_1.webp" alt="" width="100%" />
+                        </section>
+                        <section class="slider-content fade">
+                            <img src="./images/slider_2.jpg" alt="" width="100%" />
+                        </section>
+                        <section class="slider-content fade">
+                            <img src="./images/slider_3.webp" alt="" width="100%" />
+                        </section>
+                        <!-- <section class="slider-content fade">
+                            <img src="./img/SLIDER4.jpg" alt="" width="100%" />
+                        </section> -->
+                    </section>
+                    <section class="pagination">
+                        <section class="dot" onclick="currentSlide(0)"></section>
+                        <section class="dot" onclick="currentSlide(1)"></section>
+                        <section class="dot" onclick="currentSlide(2)"></section>
+                        <!-- <section class="dot" onclick="currentSlide(3)"></section> -->
+                    </section>
+                </section>
+            </section>
+        </section>
+        <!-- Collection section -->
+        <section class="section-collection">
+            <section class="collection">
+                <section class="col-1 col">
+                    <section class="content">
+                        <h1 class="title">Rau quả tươi</h1>
+                        <span>Chúng tôi cam kết 100% các sản phẩm có nguồn gốc xuất xứ rõ ràng, sạch, an toàn và đảm bảo
+                            chất lượng ngon nhất giao đến
+                            tận tay người tiêu dùng, để san sẻ sự vất vả của các mẹ, các chị
+                        </span>
+                        <a href="#" class="btn btn-primary btn_xem" title="Rau quả tươi">Xem ngay</a>
+                    </section>
+                </section>
+                <section class="col-2 col">
+                    <section class="content">
+                        <h1 class="title">Sinh tố hoa quả</h1>
+                        <span>Chúng tôi cam kết 100% các sản phẩm có nguồn gốc xuất xứ rõ ràng, sạch, an toàn và đảm bảo
+                            chất lượng ngon nhất giao đến
+                            tận tay người tiêu dùng, để san sẻ sự vất vả của các mẹ, các chị
+                        </span>
+                        <a href="#" class="btn btn-primary btn_xem" title="Sinh tố hoa quả">Xem ngay</a>
+                    </section>
+                </section>
+                <section class="col-3 col">
+                    <section class="content">
+                        <h1 class="title">Thực phẩm tươi</h1>
+                        <span>Chúng tôi cam kết 100% các sản phẩm có nguồn gốc xuất xứ rõ ràng, sạch, an toàn và đảm bảo
+                            chất lượng ngon nhất giao đến
+                            tận tay người tiêu dùng, để san sẻ sự vất vả của các mẹ, các chị
+                        </span>
+                        <a href="#" class="btn btn-primary btn_xem" title="Thực phẩm tươi">Xem ngay</a>
+                    </section>
+                </section>
+                <section class="col-4 col">
+                    <section class="content">
+                        <h1 class="title">Hoa quả tươi mát</h1>
+                        <span>Chúng tôi cam kết 100% các sản phẩm có nguồn gốc xuất xứ rõ ràng, sạch, an toàn và đảm bảo
+                            chất lượng ngon nhất giao đến
+                            tận tay người tiêu dùng, để san sẻ sự vất vả của các mẹ, các chị
+                        </span>
+                        <a href="#" class="btn btn-primary btn_xem" title="Hoa quả tươi mát">Xem ngay</a>
+                    </section>
+                </section>
+            </section>
+        </section>
+        <!-- Content section -->
+        <section class="content">
+            <!-- About us section -->
+            <section class="about-us">
+                <h2 class="text-gradient">VỀ CHÚNG TÔI</h2>
+                <p>Hiện tại vùng nguyên liệu của chúng tôi có thể cung cấp các thực tập tươi sạch với số lượng lớn đang
+                    vào vụ mùa thu hoạch nên
+                    br chúng tôi có thể cung ứng cho tất cả các đối tác xuất khẩu nông sản trên cả
+                    nước.
+                </p>
+                <section class="icon-body">
+                    <section class="icon-item">
+                        <section>
+                            <img src="./images/icon_uti_1.webp" alt="">
+                        </section>
+                        <section class="content">
+                            <h3 class="title">Trang trại hữu cơ</h3>
+                            <span class="para">Cung cấp 100% thực phẩm sạch đảm bảo an toàn và ngon nhất</span>
+                        </section>
+                    </section>
+                    <section class="icon-item">
+                        <img src="./images/icon_uti_2.webp" alt="">
+                        <section class="content">
+                            <h3 class="title">Thực phẩm sạch</h3>
+                            <span class="para">Cung cấp 100% thực phẩm sạch đảm bảo an toàn và ngon nhất</span>
+                        </section>
+                    </section>
+                    <section class="icon-item">
+                        <img src="./images/icon_uti_3.webp" alt="">
+                        <section class="content">
+                            <h3 class="title">An toàn sinh học</h3>
+                            <span class="para">Cung cấp 100% thực phẩm sạch đảm bảo an toàn và ngon nhất</span>
+                        </section>
+                    </section>
+                    <section class="icon-item">
+                        <img src="./images/icon_uti_4.webp" alt="">
+                        <section class="content">
+                            <h3 class="title">Đa dạng sinh học</h3>
+                            <span class="para">Cung cấp 100% thực phẩm sạch đảm bảo an toàn và ngon nhất</span>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <!-- Product list section -->
+            <section class="product-list">
+                <h2 class="text-gradient">DANH MỤC SẢN PHẨM</h2>
+                <section class="product-list-container grid">
+                    <ul class="product-filters">
+                        <li>
+                            <button class="product__item active-product" data-filter="raucu">
+                                <span>Rau củ</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="product__item" data-filter=".hoaqua">
+                                <span>Hoa quả</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="product__item" data-filter=".haisan">
+                                <span>Hải sản</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="product__item" data-filter=".cacloaihat">
+                                <span>Các loại hạt</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="product__item" data-filter=".thucphamtuoisong">
+                                <span>Thực phẩm tươi sống</span>
+                            </button>
+                        </li>
+                    </ul>
+                    <section class="product-grid">
+                        <section class="product-grid-inner">
+                            <article class="product-card mix tesla">
+                                <section class="product-thumbnail">
+                                    <img src="./images/18.webp" alt="">
+                                </section>
+                                <section class="product-content">
+                                    <h3 class="product-name">Vải thiều Thanh Hà</h3>
+                                    <section class="product-price">
+                                        <section class="product-new-price price">40.000đ</section>
+                                        <section class="product-old-price price">79.000đ</section>
+                                    </section>
+                                    <ul class="icon-group">
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa-solid fa-basket-shopping addToCart"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./ChiTietSP.html">
+                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </section>
+                            </article>
+                        </section>
+                        <section class="product-grid-inner">
+                            <article class="product-card mix thucphamtuoisong">
+                                <section class="product-thumbnail">
+                                    <img src="./images/2.webp" alt="">
+                                </section>
+                                <section class="product-content">
+                                    <h3 class="product-name">Thịt bò Canada nhập khẩu</h3>
+                                    <section class="product-price">
+                                        <section class="product-new-price price">450.000đ</section>
+                                        <section class="product-old-price price">480.000đ</section>
+                                    </section>
+                                </section>
+                                <ul class="icon-group">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-basket-shopping addToCart"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ChiTietSP.html">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </article>
+                        </section>
+                        <section class="product-grid-inner">
+                            <article class="product-card mix cacloaihat">
+                                <section class="product-thumbnail">
+                                    <img src="./images/4.webp" alt="">
+                                </section>
+                                <section class="product-content">
+                                    <h3 class="product-name">Ngũ cốc</h3>
+                                    <section class="product-price">
+                                        <section class="product-new-price price">120.000đ</section>
+                                    </section>
+                                </section>
+                                <ul class="icon-group">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-basket-shopping addToCart"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ChiTietSP.html">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </article>
+                        </section>
+                        <section class="product-grid-inner">
+                            <article class="product-card mix raucu">
+                                <section class="product-thumbnail">
+                                    <img src="./images/6.webp" alt="">
+                                </section>
+                                <section class="product-content">
+                                    <h3 class="product-name">Cá hồi Mỹ</h3>
+                                    <section class="product-price">
+                                        <section class="product-new-price price">600.000đ</section>
+                                        <section class="product-old-price price">800.000đ</section>
+                                    </section>
+                                    <ul class="icon-group">
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa-solid fa-basket-shopping"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./ChiTietSP.html">
+                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </section>
+                        </section>
+                        </article>
+                        <section class="product-grid-inner">
+                            <article class="product-card mix raucu">
+                                <section class="product-thumbnail">
+                                    <img src="./images/7.webp" alt="">
+                                </section>
+                                <section class="product-content">
+                                    <h3 class="product-name">Cua bể</h3>
+                                    <section class="product-price">
+                                        <section class="product-new-price price">250.000đ</section>
+                                    </section>
+                                </section>
+                                <ul class="icon-group">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-basket-shopping addToCart"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ChiTietSP.html">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </article>
+                        </section>
+                        <section class="product-grid-inner">
+                            <article class="product-card mix raucu">
+                                <section class="product-thumbnail">
+                                    <img src="./images/14.webp" alt="">
+                                </section>
+                                <section class="product-content">
+                                    <h3 class="product-name">Súp lơ trắng</h3>
+                                    <section class="product-price">
+                                        <section class="product-new-price price">20.000đ</section>
+                                    </section>
+                                </section>
+                                <ul class="icon-group">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-basket-shopping addToCart"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ChiTietSP.html">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </article>
+                        </section>
+                        <section class="product-grid-inner">
+                            <article class="product-card mix tesla">
+                                <section class="product-thumbnail">
+                                    <img src="./images/15.webp" alt="">
+                                </section>
+                                <section class="product-content">
+                                    <h3 class="product-name">Nho mỹ nhập khẩu</h3>
+                                    <section class="product-price">
+                                        <section class="product-new-price price">235.000đ</section>
+                                        <section class="product-old-price price">265.000đ</section>
+                                    </section>
+                                    <ul class="icon-group">
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa-solid fa-basket-shopping"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./ChiTietSP.html">
+                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </section>
+                        </section>
+                        </article>
+                        <section class="product-grid-inner">
+                            <article class="product-card mix tesla">
+                                <section class="product-thumbnail">
+                                    <img src="./images/24.webp" alt="">
+                                </section>
+                                <section class="product-content">
+                                    <h3 class="product-name">Nấm Lim xanh</h3>
+                                    <section class="product-price">
+                                        <section class="product-new-price price">890.000đ</section>
+                                        <section class="product-old-price price">990.000đ</section>
+                                    </section>
+                                    <ul class="icon-group">
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa-solid fa-basket-shopping"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./ChiTietSP.html">
+                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </section>
+                        </section>
+                        </article>
+                    </section>
+                </section>
+            </section>
+            <section class="hotline-section">
+                <video autoplay loop muted>
+                    <source src="./video/pexels-kindel-media-7457085.mp4" type="video/mp4">
+                </video>
+                <section class="hotline-section-content">
+                    <section class="hotline-content">
+                        <h2 class="hotline-title">Hotline</h2>
+                        <a class="hotline" href="tel:19006750">1900 6750</a>
+                        <p class="introduce">Chúng tôi cam kết 100% các sản phẩm có nguồn gốc xuất xứ rõ ràng, sạch, an
+                            toàn
+                            và đảm bảo chất lượng ngon nhất.
+                        </p>
+                    </section>
+                </section>
+            </section>
+            <!-- Best seller section -->
+            <section class="product-list">
+                <h2 class="text-gradient">SẢN PHẨM BÁN CHẠY</h2>
+                <section class="product-list-container grids">
+                    <section class="product-grid-inner">
+                        <article class="product-card mix tesla">
+                            <section class="product-thumbnail">
+                                <img src="./images/18.webp" alt="">
+                            </section>
+                            <section class="product-content">
+                                <h3 class="product-name">Vải thiều Thanh Hà</h3>
+                                <section class="product-price">
+                                    <section class="product-new-price price">40.000đ</section>
+                                    <section class="product-old-price price">79.000đ</section>
+                                </section>
+                                <ul class="icon-group">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-basket-shopping addToCart"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ChiTietSP.html">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </section>
+                        </article>
+                    </section>
+                    <section class="product-grid-inner">
+                        <article class="product-card mix tesla">
+                            <section class="product-thumbnail">
+                                <img src="./images/19.webp" alt="">
+                            </section>
+                            <section class="product-content">
+                                <h3 class="product-name">Đào đỏ Mỹ</h3>
+                                <section class="product-price">
+                                    <section class="product-new-price price">31.000đ</section>
+                                    <section class="product-old-price price">39.000đ</section>
+                                </section>
+                                <ul class="icon-group">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-basket-shopping addToCart"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ChiTietSP.html">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </section>
+                        </article>
+                    </section>
+                    <section class="product-grid-inner">
+                        <article class="product-card mix tesla">
+                            <section class="product-thumbnail">
+                                <img src="./images/20.webp" alt="">
+                            </section>
+                            <section class="product-content">
+                                <h3 class="product-name">Đâu tây Đà Lạt</h3>
+                                <section class="product-price">
+                                    <section class="product-new-price price">350.000đ</section>
+                                    <section class="product-old-price price">480.000đ</section>
+                                </section>
+                                <ul class="icon-group">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-basket-shopping addToCart"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ChiTietSP.html">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </section>
+                        </article>
+                    </section>
+                    <section class="product-grid-inner">
+                        <article class="product-card mix tesla">
+                            <section class="product-thumbnail">
+                                <img src="./images/21.webp" alt="">
+                            </section>
+                            <section class="product-content">
+                                <h3 class="product-name">Táo xanh Mỹ</h3>
+                                <section class="product-price">
+                                    <section class="product-new-price price">160.000đ</section>
+                                    <section class="product-old-price price">220.000đ</section>
+                                </section>
+                                <ul class="icon-group">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-basket-shopping addToCart"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./ChiTietSP.html">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </section>
+                        </article>
+                    </section>
+                </section>
+            </section>
+        </section>
+        <!-- Lastest news section -->
+        <section class="lastest-news">
+            <h2 class="text-gradient">TIN TỨC MỚI NHẤT</h2>
+            <section class="lastest-news-container">
+                <article class="col-item">
+                    <section class="image">
+                        <img class="card-img" src="./images/news1.webp" alt="">
+                    </section>
+                    <section class="time">
+                        <i class="fa-regular fa-calendar"></i>
+                        <span>24/05/2022</span>
+                    </section>
+                    <section class="content-news">
+                        <h3>Rau xanh tăng giá mạnh vì trời mưa, người dân nội thành lao đao</h3>
+                        <p>Khoảng gần một tuần nay, do ảnh hưởng của những cơn mưa lớn kéo dài liên tiếp nên...</p>
+                    </section>
+                </article>
+                <article class="col-item center">
+                    <section class="image">
+                        <img class="card-img" src="./images/news2.webp" alt="">
+                    </section>
+                    <section class="time">
+                        <i class="fa-regular fa-calendar"></i>
+                        <span>24/05/2022</span>
+                    </section>
+                    <section class="content-news">
+                        <h3>Nhập khẩu rau quả vượt mốc 1 tỷ USD, Thái Lan chiếm 60% thị phần</h3>
+                        <p>Theo báo cáo từ Bộ NN&PTNT, giá trị xuất khẩu hàng rau quả tháng 9 năm 2017 ước đ...</p>
+                    </section>
+                </article>
+                <article class="col-item">
+                    <section class="image">
+                        <img class="card-img" src="./images/news3.webp" alt="">
+                    </section>
+                    <section class="time">
+                        <i class="fa-regular fa-calendar"></i>
+                        <span>24/05/2022</span>
+                    </section>
+                    <section class="content-news">
+                        <h3>Bí quyết bảo quản nho đen trong tủ lạnh tươi lâu hơn</h3>
+                        <p>Bí quyết lựa chọn và bảo quản nho tươi – Nho rất ngon và tốt cho sức khỏe, tuy nh...</p>
+                    </section>
+                </article>
+            </section>
+        </section>
+        <!-- Top brand section -->
+        <section class="top-brand">
+            <h2 class="text-gradient">TOP THƯƠNG HIỆU</h2>
+            <article class="brand">
+                <img src="./images/brand_1.webp" alt="">
+                <img src="./images/brand_2.webp" alt="">
+                <img src="./images/brand_3.webp" alt="">
+                <img src="./images/brand_4.webp" alt="">
+                <img src="./images/brand_5.webp" alt="">
+                <img src="./images/brand_6.webp" alt="">
+            </article>
+        </section>
+        <!-- Sign section -->
+        <section class="sign">
+            <section class="sign-content">
+                <h3>Đăng ký nhận tin khuyến mãi</h3>
+                <form action="#">
+                    <input type="email" placeholder="Nhập email của bạn ..."
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                    <button type="submit">Đăng ký</button>
+                </form>
+            </section>
+        </section>
+        <!-- Footer section -->
+        <footer class="footer">
+            <section class="footer-links">
+                <section class="col-ft-1 ft">
+                    <ul class="footer-list">
+                        <li>
+                            <img src="./images/logo.webp" alt="">
+                        </li>
+                        <li>
+                            <a href="./LienHe.html">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>288 Đường Nguyễn Văn Linh, Hưng Lợi, Ninh Kiều, Cần Thơ</span>
+                            </a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            <a class="thai" href="tel:0774060610">0774060610</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:thaitqpc04444@fpt.edu.vn">thaitqpc04444@fpt.edu.vn</a>
+                        </li>
+                    </ul>
+                    <section class="col-ft-1 ft-address">
+                    </section>
+                </section>
+                <section class="col-ft-2 ft">
+                    <h4>Thông tin</h4>
+                    <ul class="footer-list">
+                        <li>
+                            <a href="./index.html">
+                                <i class="fa-solid fa-caret-right"></i>
+                                Trang chủ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./GioiThieu.html">
+                                <i class="fa-solid fa-caret-right"></i>
+                                Giới thiệu
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./SanPham.html">
+                                <i class="fa-solid fa-caret-right"></i>
+                                Sản phẩm
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./TinTuc.html">
+                                <i class="fa-solid fa-caret-right"></i>
+                                Tin tức
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./LienHe.html">
+                                <i class="fa-solid fa-caret-right"></i>
+                                Liên hệ
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <section class="col-ft-3 ft">
+                    <h4>CHÍNH SÁCH</h4>
+                    <ul class="footer-list">
+                        <li>
+                            <a href="./index.html">
+                                <i class="fa-solid fa-caret-right"></i>
+                                Chính sách thanh toán
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./GioiThieu.html">
+                                <i class="fa-solid fa-caret-right"></i>
+                                Chính sách vận chuyển
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./SanPham.html">
+                                <i class="fa-solid fa-caret-right"></i>
+                                Chính sách bảo hành
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./TinTuc.html">
+                                <i class="fa-solid fa-caret-right"></i>
+                                Chính sách đổi trả
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./LienHe.html">
+                                <i class="fa-solid fa-caret-right"></i>
+                                Chính sách bảo mật
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <section class="col-ft-4 ft">
+                    <h4>SẢN PHẨM</h4>
+                    <ul class="footer-list">
+                        <li>
+                            <a href="./index.html">
+                                <i class="fa-solid fa-caret-right"></i>
+                                Rau củ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./GioiThieu.html">
+                                <i class="fa-solid fa-caret-right"></i>
+                                Hoa quả
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./SanPham.html">
+                                <i class="fa-solid fa-caret-right"></i>
+                                Hải sản
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./TinTuc.html">
+                                <i class="fa-solid fa-caret-right"></i>
+                                Các loại hạt
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./LienHe.html">
+                                <i class="fa-solid fa-caret-right"></i>
+                                Thực phẩm tươi sống
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+            <section class="footer-copyright">
+                <section class="copyright">
+                    <p>Copyright &copy;2022 All rights reserved.
+                        Email: <a href="mailto:thaitqpc04444@fpt.edu.vn">&nbsp;thaitqpc04444@fpt.edu.vn</a>
+                    </p>
+                </section>
+            </section>
+        </footer>
+    </section>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
