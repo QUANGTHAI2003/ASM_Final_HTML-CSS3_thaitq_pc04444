@@ -138,6 +138,10 @@ indents.forEach((tab, index) => {
     }
 })
 
+$(window).on('load', () => {
+    $('.loader-wrapper').fadeOut('slow');
+})
+
 // Show menu and overlay
 $('.menu').addEventListener('click', () => {
     $('.nav').classList.add('show-menu');

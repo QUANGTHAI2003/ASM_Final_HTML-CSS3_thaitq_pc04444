@@ -460,11 +460,11 @@
 
     .product-grid,
     .grids {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     .lastest-news-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     .brand {
