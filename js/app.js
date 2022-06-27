@@ -137,11 +137,6 @@ indents.forEach((tab, index) => {
         info.classList.add('change')
     }
 })
-
-$(window).on('load', () => {
-    $('.loader-wrapper').fadeOut('slow');
-})
-
 // Show menu and overlay
 $('.menu').addEventListener('click', () => {
     $('.nav').classList.add('show-menu');
